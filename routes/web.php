@@ -10,6 +10,9 @@ use function Pest\Laravel\get;
 
 Route::resource('produtos', ProdutoController::class);
 
+
+
+
 /*
 [3]: https://blog.debugeverything.com/pt/controllers-no-laravel-um-guia-completo-para-iniciantes/ ""
 
