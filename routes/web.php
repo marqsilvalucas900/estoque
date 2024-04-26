@@ -43,10 +43,10 @@ Isso simplifica a criação de rotas para um recurso, seguindo as convenções R
 
 
 */ 
-
-
-
-
+// php artisan make:model Teste -mfscr 
+// php artisan make:seeder CategoriasSeeder
+// php artisan make:factory CategoriaFactory
+// php artisan db:seed
 // php artisan make:seeders UsersSeeder
 // php artisan make:model Categoria -m -cr
 // php artisan make:model Categoria --migration --controller --resource cria um controller padrão
