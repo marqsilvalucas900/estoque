@@ -76,6 +76,24 @@
     array esta vazio
 @endforelse
 
+@include('includes.mensagem', ['titulo'=>'Mesagem de sucesso']);
+
+@component('components.sidebar')
+    @slot('paragrafo')
+        Texto Qualquer vindo do slot
+    @endslot
+
+@endcomponent
+
+@push('style')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+@endpush
+
+@push('')
+    
+@endpush
+
+
 
 @endsection
 
