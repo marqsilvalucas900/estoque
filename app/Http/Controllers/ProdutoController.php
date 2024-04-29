@@ -12,14 +12,17 @@ class ProdutoController extends Controller
      */
     public function index()
     {
-        $nome = "Jumento";
-        $idade = 100;
-        $html = "<h1>Olá eu sou $nome</h1>";
-        $frutas = ['banana','laranja','maçã'];
+        // $nome = "Jumento";
+        // $idade = 100;
+        // $html = "<h1>Olá eu sou $nome</h1>";
+        // $frutas = ['banana','laranja','maçã'];
         // $produtos = \App\Models\Produto::all();
         // return dd($produtos);
-        return view('site.home',compact('nome','idade','html','frutas'));
+        // return view('site.home',compact('nome','idade','html','frutas'));
         // return view('site.home',['nome' => $nome, 'idade' => $idade, 'html'=>$html]);
+        // return view('site.home',compact('nome','idade','html','frutas'));
+        $produtos = Produto::all();
+        return view('site.home',compact('produtos'));
     }
 
     /**
