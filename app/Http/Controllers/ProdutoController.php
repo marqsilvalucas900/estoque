@@ -21,7 +21,7 @@ class ProdutoController extends Controller
         // return view('site.home',compact('nome','idade','html','frutas'));
         // return view('site.home',['nome' => $nome, 'idade' => $idade, 'html'=>$html]);
         // return view('site.home',compact('nome','idade','html','frutas'));
-        $produtos = Produto::all();
+        $produtos = Produto::paginate(3);
         return view('site.home',compact('produtos'));
     }
 

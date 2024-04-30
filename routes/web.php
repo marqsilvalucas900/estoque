@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
 use function Pest\Laravel\get;
@@ -10,9 +11,9 @@ use function Pest\Laravel\get;
 
 Route::resource('produtos', ProdutoController::class);
 
+Route::get('/', [SiteController::class, "index"])->name('site.index');
 
-
-
+Route::get('/produto/{slug}', [SiteController::class, "details"])->name('site.details');
 /*
 [3]: https://blog.debugeverything.com/pt/controllers-no-laravel-um-guia-completo-para-iniciantes/ ""
 
